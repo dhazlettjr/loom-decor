@@ -1,0 +1,29 @@
+{
+  "types": [
+    {
+      "id": 0,
+      "category": 0,
+      "name": "bath"
+    },
+    {
+      "id": 1,
+      "category": 0,
+      "name": "kitchen"
+    },
+    {
+      "id": 2,
+      "category": 0,
+      "name": "living"
+    },
+    {
+      "id": 3,
+      "category": 0,
+      "name": "bedroom"
+    },
+    {
+      "id": 4,
+      "category": 0,
+      "name": "study"
+    }
+  ]
+}

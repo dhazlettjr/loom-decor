@@ -1,0 +1,121 @@
+{
+  "products": [
+    {
+      "bath": {
+        "id": 0,
+        "type": 0,
+        "img": "../img/BATH_1.jpg",
+        "name": "Lucy Loom",
+        "social": "@lucyloom",
+        "aesthetic": "romantic, contemporary",
+        "firm": "Multi-colored sparklers that are safe for any age.",
+        "location": "Nashville, TN",
+        "credit": "finestra studios"
+      }
+    },
+    {
+      "bedroom1": {
+        "id": 1,
+        "type": 3,
+        "img": "../img/BEDROOM_1.jpg",
+        "name": "Lucy Loom",
+        "social": "@lucyloom",
+        "aesthetic": "romantic, contemporary",
+        "firm": "Multi-colored sparklers that are safe for any age.",
+        "location": "Nashville, TN",
+        "credit": "finestra studios"
+      }
+    },
+    {
+      "bedroom2": {
+        "id": 2,
+        "type": 3,
+        "img": "../img/BEDROOM_2.jpg",
+        "name": "Lucy Loom",
+        "social": "@lucyloom",
+        "aesthetic": "romantic, contemporary",
+        "firm": "Multi-colored sparklers that are safe for any age.",
+        "location": "Nashville, TN",
+        "credit": "finestra studios"
+      }
+    },
+    {
+      "kitchen": {
+        "id": 3,
+        "type": 1,
+        "img": "../img/KITCHEN_1.jpg",
+        "name": "Lucy Loom",
+        "social": "@lucyloom",
+        "aesthetic": "romantic, contemporary",
+        "firm": "Multi-colored sparklers that are safe for any age.",
+        "location": "Nashville, TN",
+        "credit": "finestra studios"
+      }
+    },
+    {
+      "living1": {
+        "id": 4,
+        "type": 2,
+        "img": "../img/LIVING_1.jpg",
+        "name": "Lucy Loom",
+        "social": "@lucyloom",
+        "aesthetic": "romantic, contemporary",
+        "firm": "Multi-colored sparklers that are safe for any age.",
+        "location": "Nashville, TN",
+        "credit": "finestra studios"
+      }
+    },
+    {
+      "living2": {
+        "id": 5,
+        "type": 2,
+        "img": "../img/LIVING_2.jpg",
+        "name": "Lucy Loom",
+        "social": "@lucyloom",
+        "aesthetic": "romantic, contemporary",
+        "firm": "Multi-colored sparklers that are safe for any age.",
+        "location": "Nashville, TN",
+        "credit": "finestra studios"
+      }
+    },
+    {
+      "living3": {
+        "id": 6,
+        "type": 2,
+        "img": "../img/LIVING_3.jpg",
+        "name": "Lucy Loom",
+        "social": "@lucyloom",
+        "aesthetic": "romantic, contemporary",
+        "firm": "Multi-colored sparklers that are safe for any age.",
+        "location": "Nashville, TN",
+        "credit": "finestra studios"
+      }
+    },
+    {
+      "study1": {
+        "id": 7,
+        "type": 4,
+        "img": "../img/STUDY_1.jpg",
+        "name": "Lucy Loom",
+        "social": "@lucyloom",
+        "aesthetic": "romantic, contemporary",
+        "firm": "Multi-colored sparklers that are safe for any age.",
+        "location": "Nashville, TN",
+        "credit": "finestra studios"
+      }
+    },
+    {
+      "study2": {
+        "id": 8,
+        "type": 4,
+        "img": "../img/STUDY_2.jpg",
+        "name": "Lucy Loom",
+        "social": "@lucyloom",
+        "aesthetic": "romantic, contemporary",
+        "firm": "Multi-colored sparklers that are safe for any age.",
+        "location": "Nashville, TN",
+        "credit": "finestra studios"
+      }
+    }
+  ]
+}
