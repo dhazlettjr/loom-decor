@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/dhazlettjr/loom-decor#readme",
   "dependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^3.3.7",
     "firebase": "^4.9.0",
     "grunt": "^1.0.2",
     "grunt-browserify": "^5.2.0",
