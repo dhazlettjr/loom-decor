@@ -2,34 +2,40 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: stretch;
+  // align-items: stretch;
   margin: 2vw auto;
 }
-
 .prodCard {
+  height: 25em ;
+  width: 25em ;
   display: inline-block;
   margin: 2vw;
   padding: .4vw;
-  max-width: 24vw;
+  // max-width: 24vw;
   h3 {
     display: block;
     font-size: 2vw;
     text-align: center;
+    // margin-left: 50px;
     font-family: "freight-big-pro",'Times New Roman',sans-serif;
   }
   h4 {
     display: block;
     font-size: 1.5vw;
     text-align: center;
+    // margin-left: 50px;
     font-family: "freight-big-pro",'Times New Roman',sans-serif;
-
   }
   img {
     display: block;
-    width: 115%;
-    height: 250px;
+    // background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
     margin: .2em auto;
     border-radius: 50px;
+    // padding: 10px;
     box-shadow:  4px 1px 4px #888888;
   }
 }
