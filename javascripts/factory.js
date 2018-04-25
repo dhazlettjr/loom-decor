@@ -6,7 +6,7 @@ const $ = require("jquery");
 module.exports.getCategories = () => {
   return new Promise((resolve, reject) => {
     $.ajax({
-      url: "http://dhazlettjr.github.io/loom-decor/categories.json"
+      url: "http://dhazlettjr.github.io/categories.json"
     })
       .done(cats => {
         resolve(cats.categories);
@@ -20,7 +20,7 @@ module.exports.getCategories = () => {
 module.exports.getProducts = () => {
   return new Promise((resolve, reject) => {
     $.ajax({
-      url: "http://dhazlettjr.github.io/loom-decor/products.json"
+      url: "http://dhazlettjr.github.io/products.json"
     })
       .done(prods => {
         resolve(prods.products);
@@ -34,7 +34,7 @@ module.exports.getProducts = () => {
 module.exports.getTypes = () => {
   return new Promise((resolve, reject) => {
     $.ajax({
-      url: "http://dhazlettjr.github.io/loom-decor/types.json"
+      url: "http://dhazlettjr.github.io/types.json"
     })
       .done(types => {
         resolve(types.types);
