@@ -15,6 +15,8 @@ This Landing page is a replica of the current ***Loom Decor*** homepage.
 - Jquery
 - Grunt
 - Bootstrap
+- Browserify
+- Sass
 
 ## How to run:
 - Migrate to repo and ***click*** the clone/download button
