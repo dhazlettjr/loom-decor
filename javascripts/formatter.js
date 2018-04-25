@@ -1,7 +1,6 @@
 "use strict";
 
 module.exports.formatData = data => {
-  console.log("our data", data);
 
   const products = data[2];
   const types = data[1];
@@ -9,9 +8,7 @@ module.exports.formatData = data => {
 
   let revisedProds = products.map(prod => {
     let currentProd = Object.keys(prod);
-    console.log(currentProd);
     let prodType = types.find(type => type.id === prod[currentProd].type );
-    console.log('prodType', prodType);
     let prodCat = cats.find( category => category.id === prodType.category);
 
     prod[currentProd].type = prodType.name;
@@ -19,6 +16,5 @@ module.exports.formatData = data => {
 
     return prod;
   });
-  console.log("revised", revisedProds);
   return revisedProds;
 };

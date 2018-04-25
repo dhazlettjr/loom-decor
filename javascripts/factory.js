@@ -2,8 +2,8 @@
 
 const $ = require("jquery");
 
+// Make XHR (ajax) request(s) for data
 module.exports.getCategories = () => {
-  console.log("These are cats");
   return new Promise((resolve, reject) => {
     $.ajax({
       url: "../data/categories.json"
