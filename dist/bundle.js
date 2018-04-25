@@ -3,8 +3,8 @@
 
 const $ = require("jquery");
 
+// Make XHR (ajax) request(s) for data
 module.exports.getCategories = () => {
-  console.log("These are cats");
   return new Promise((resolve, reject) => {
     $.ajax({
       url: "../data/categories.json"
@@ -49,7 +49,6 @@ module.exports.getTypes = () => {
 "use strict";
 
 module.exports.formatData = data => {
-  console.log("our data", data);
 
   const products = data[2];
   const types = data[1];
@@ -57,9 +56,7 @@ module.exports.formatData = data => {
 
   let revisedProds = products.map(prod => {
     let currentProd = Object.keys(prod);
-    console.log(currentProd);
     let prodType = types.find(type => type.id === prod[currentProd].type );
-    console.log('prodType', prodType);
     let prodCat = cats.find( category => category.id === prodType.category);
 
     prod[currentProd].type = prodType.name;
@@ -67,7 +64,6 @@ module.exports.formatData = data => {
 
     return prod;
   });
-  console.log("revised", revisedProds);
   return revisedProds;
 };
 },{}],3:[function(require,module,exports){
@@ -80,14 +76,17 @@ const prodView = require('./prodView');
 
 const loom = [];
 
+//array of factory gets put into a prmose
 let promArr = [
   factory.getCategories(),
   factory.getTypes(),
   factory.getProducts()
 ];
+//run a promise all to gather all GETs at the same time
 Promise.all(promArr)
 .then( (dataArr) => {
   let revisedProds = formatter.formatData(dataArr);
+  //pull in displayProducts from prodView
   prodView.displayProducts(revisedProds);
 })
 .catch( (err) => {
@@ -103,18 +102,22 @@ let formatter = require("./formatter");
 
 module.exports.displayProducts = (products) => {
   products.forEach( (prod) => {
+    //returns an array whose elements are strings associated with properties found directly upon object
     let prodKey = Object.keys(prod)[0];
     let currentProd = prod[prodKey];
+    //dynamically created cards
     let productString = `
     <div class="prodCard container overlay">
     <img id="myImg" src=${currentProd.img}>
       <h3>${currentProd.aesthetic}</h3>
       <h4>${currentProd.type}</h4>
       </div>`;
+      //appending the product string to the products div on index
     $("#products").append(productString);
   });
 };
 
+//search filter
 $(document).ready(function(){
   $('#input').on('keyup', function() {
     let searchTerm = $(this).val().toLowerCase();
