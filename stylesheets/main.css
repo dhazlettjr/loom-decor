@@ -1,0 +1,122 @@
+#products {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 2vw auto; }
+
+@media (max-width: 520px) {
+  #products {
+    display: grid;
+    grid-template-columns: 1; }
+
+  .prodCard img {
+    width: 75px;
+    max-height: 150px;
+    margin: .2em auto;
+    border-radius: 50px;
+    box-shadow: 4px 1px 4px #888888; } }
+.prodCard {
+  display: inline-block;
+  margin: 2vw;
+  padding: .4vw;
+  max-width: 24vw; }
+  .prodCard h3 {
+    display: block;
+    font-size: 2vw;
+    text-align: center;
+    font-family: "freight-big-pro",'Times New Roman',sans-serif; }
+  .prodCard h4 {
+    display: block;
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: "freight-big-pro",'Times New Roman',sans-serif; }
+  .prodCard img {
+    display: block;
+    width: 115%;
+    height: 250px;
+    margin: .2em auto;
+    border-radius: 50px;
+    box-shadow: 4px 1px 4px #888888; }
+
+.nav {
+  background-color: white; }
+
+#header-container {
+  padding-left: 140px;
+  padding-right: 140px; }
+
+.headerleft {
+  height: 146px;
+  min-width: 400px;
+  width: 50%;
+  float: left;
+  padding-right: 15px;
+  background-position: center left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block; }
+
+.headerdiv {
+  height: 200px;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 17px;
+  padding-left: 65px;
+  padding-right: 65px; }
+
+.header-right {
+  width: 40%;
+  height: 146px;
+  float: right;
+  border-left: 2px solid #c5c6c8;
+  padding-left: 15px; }
+
+.headerright1 {
+  height: 40px;
+  width: 100%;
+  text-align: justify;
+  vertical-align: bottom;
+  padding-top: 7px; }
+
+.contact {
+  text-decoration: underline overline; }
+
+.img-responsive {
+  max-width: 30%;
+  max-height: auto;
+  padding-top: 10px;
+  margin-bottom: 10px; }
+
+.navbar.navbar-default {
+  background-color: #99ccff;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.navbar.navbar-default .navbar-collapse {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.ship-strip {
+  background-color: #312525;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  text-align: center; }
+
+.strip {
+  background-color: black;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.hero {
+  max-width: 100%;
+  max-height: auto;
+  margin-bottom: 10; }
+
+.social {
+  color: black; }
+
+/*# sourceMappingURL=main.css.map */
