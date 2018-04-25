@@ -73,14 +73,12 @@ module.exports.formatData = data => {
 },{}],3:[function(require,module,exports){
 "use strict";
 
-console.log("Acme Explosives");
-
 const $ = require("jquery");
 const factory = require("./factory");
 const formatter = require('./formatter');
 const prodView = require('./prodView');
 
-const acmeData = [];
+const loom = [];
 
 let promArr = [
   factory.getCategories(),
@@ -99,6 +97,9 @@ Promise.all(promArr)
 'use strict';
 
 const $ = require('jquery');
+let prodFactory = require("./factory");
+let formatter = require("./formatter");
+
 
 module.exports.displayProducts = (products) => {
   products.forEach( (prod) => {
@@ -107,34 +108,28 @@ module.exports.displayProducts = (products) => {
     let productString = `
     <div class="prodCard container overlay">
     <img id="myImg" src=${currentProd.img}>
-      <h3>Designed by ${currentProd.name}</h3>
-      <h5>Social: ${currentProd.social}</h5><br>
-      <h5>${currentProd.firm}</h5><br>
-      <h5>${currentProd.location}</h5>
+      <h3>${currentProd.aesthetic}</h3>
+      <h4>${currentProd.type}</h4>
       </div>`;
     $("#products").append(productString);
   });
 };
 
-// var modal = document.getElementById('myModal');
+$(document).ready(function(){
+  $('#input').on('keyup', function() {
+    let searchTerm = $(this).val().toLowerCase();
+    $('.prodCard').filter(function (){
+      let lineStr = $(this).text().toLowerCase();
+      if(lineStr.indexOf(searchTerm)=== -1){
+        $(this).hide();
+      } else {
+        $(this).show();
+      }
+    });
+  });
+});
 
-// // Get the image and insert it inside the modal - use its "alt" text as a caption
-// var img = document.getElementById('products');
-// var modalImg = document.getElementById("myImg");
-// img.onclick = function(){
-//     modal.style.display = "block";
-//     modalImg.src = this.src;
-// };
-
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
-
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() { 
-//     modal.style.display = "none";
-// };
-
-},{"jquery":5}],5:[function(require,module,exports){
+},{"./factory":1,"./formatter":2,"jquery":5}],5:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/

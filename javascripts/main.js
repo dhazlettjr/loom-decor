@@ -1,13 +1,11 @@
 "use strict";
 
-console.log("Acme Explosives");
-
 const $ = require("jquery");
 const factory = require("./factory");
 const formatter = require('./formatter');
 const prodView = require('./prodView');
 
-const acmeData = [];
+const loom = [];
 
 let promArr = [
   factory.getCategories(),
