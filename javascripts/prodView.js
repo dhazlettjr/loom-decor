@@ -12,12 +12,8 @@ module.exports.displayProducts = (products) => {
     let productString = `
     <div class="prodCard container overlay">
     <img id="myImg" src=${currentProd.img}>
-      <h3>Designed by ${currentProd.name}</h3>
-      <h4>Social: ${currentProd.social}</h4><br>
-      <h4>${currentProd.firm}</h4><br>
-      <h4>${currentProd.location}</h4>
-      <h5 class="type">${currentProd.type}</h5>
-      <button type="submit" class="btn btn-default">Add to WISH</button>
+      <h3>${currentProd.aesthetic}</h3>
+      <h4>${currentProd.type}</h4>
       </div>`;
     $("#products").append(productString);
   });
