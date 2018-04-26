@@ -8,22 +8,40 @@
 @media (max-width: 520px) {
   #products {
     display: grid;
-    grid-template-columns: 1; }
+    margin-right: 115px; }
 
   .prodCard img {
-    width: 75px;
-    max-height: 150px;
-    margin: .2em auto;
-    border-radius: 50px;
-    box-shadow: 4px 1px 4px #888888; } }
+    display: inline-block;
+    font-size: 6vw !important;
+    width: 250px !important;
+    height: 200px !important;
+    margin: 2vw !important;
+    margin: .2em auto !important;
+    border-radius: 10px !important;
+    box-shadow: 4px 1px 4px #888888 !important; } }
+@media (max-width: 520px) {
+  h3 {
+    display: block !important;
+    font-size: 6vw !important;
+    margin-left: 50px !important;
+    text-align: center !important;
+    font-family: "freight-big-pro",'Times New Roman',sans-serif !important; } }
+@media (max-width: 520px) {
+  h4 {
+    display: block !important;
+    font-size: 4vw !important;
+    margin-left: 50px !important;
+    text-align: center !important;
+    font-family: "freight-big-pro",'Times New Roman',sans-serif !important; } }
 .prodCard {
   display: inline-block;
   margin: 2vw;
   padding: .4vw;
-  max-width: 24vw; }
+  max-width: 26vw; }
   .prodCard h3 {
     display: block;
     font-size: 2vw;
+    margin-left: 50px;
     text-align: center;
     font-family: "freight-big-pro",'Times New Roman',sans-serif; }
   .prodCard h4 {
