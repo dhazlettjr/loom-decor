@@ -10,9 +10,10 @@ module.exports.formatData = data => {
   const cats = data[0];
   
   //im going to create a new array to match the category and type ids to the product itself
-
+  
+  //prod is a full list of products
   let revisedProds = products.map(prod => {
-    //prod is a full list of products
+  //grab the keys of the object
     let currentProd = Object.keys(prod);
     //currentProd is each individual prod
     let prodType = types.find(type => type.id === prod[currentProd].type );
